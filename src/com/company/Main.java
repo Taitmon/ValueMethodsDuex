@@ -14,7 +14,7 @@ public class Main
         sum = getTotal(12, 12);
         System.out.println(sum);
 
-        int max = max(50, 5);
+        int max = max(5, 50);
         System.out.println(max);
     }
 
@@ -36,7 +36,13 @@ public class Main
         {
             max = b;
         }
+        else if (a == b)
+        {
+            max = a;
+        }
 
         return max;
     }
+
+
 }
