@@ -16,6 +16,16 @@ public class Main
 
         int max = max(5, 50);
         System.out.println(max);
+
+        boolean trueOrFalse = isThunderDome(2,1);
+        System.out.println(trueOrFalse);
+
+        trueOrFalse = isThunderDome(1,2);
+        System.out.println(trueOrFalse);
+
+        trueOrFalse = isThunderDome(2,2);
+        System.out.println(trueOrFalse);
+
     }
 
     private static int getTotal(int firstNumber, int secondNumber)
@@ -43,6 +53,21 @@ public class Main
 
         return max;
     }
+
+    private static boolean isThunderDome (int enteredCount, int leavingCount)
+    {
+        boolean trueOrFalse;
+        if (enteredCount == 2 && leavingCount == 1)
+        {
+            trueOrFalse = true;
+        }
+        else
+        {
+          trueOrFalse = false;
+        }
+
+        return trueOrFalse;
+}
 
 
 }
